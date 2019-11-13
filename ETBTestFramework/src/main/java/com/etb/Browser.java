@@ -12,9 +12,13 @@ public class Browser {
 		driver.get(url);
 	}
 	
-	public static String title()
-	{
+	public static String title(){
 		return driver.getTitle();
 	}
-	
+
+	public static void close() {
+		driver.close();
+	}
 }
+
+
