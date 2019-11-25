@@ -11,14 +11,25 @@ public class InitialTests {
 	@Test
 	//Test home page opens properly
 	//by checking the page title.
-	public void test() {
+	public void testHomePage() {
 		Pages.homePage().goTo();
 		assertTrue(Pages.homePage().isAt());
 	}
 	
-	@After
+	@Test
+	//Test home page opens properly
+	//by checking the page title.
+	public void testMusicEducationPage() {
+		Pages.homePage().goTo();
+		Pages.homePage().clickCookieNotice();
+		Pages.homePage().clickMusicEducationLink();
+		assertTrue(Pages.musicEducationPage().isAt());
+	}
+	
+	
+	@AfterClass
 	//Closing the browser
-	public void cleanUp() {
+	public static void cleanUp() {
 		Browser.close();
 	}
 	

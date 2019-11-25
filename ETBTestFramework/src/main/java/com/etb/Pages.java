@@ -7,4 +7,9 @@ public class Pages {
 		return new HomePage();
 	}
 
+	public static MusicEducationPage musicEducationPage() {
+		// TODO Auto-generated method stub
+		return new MusicEducationPage();
+	}
+
 }

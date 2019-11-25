@@ -1,5 +1,7 @@
 package com.etb;
 
+import org.openqa.selenium.By;
+
 public class HomePage {
 	
 	static String url = "https://www.donegaletb.ie/";
@@ -17,6 +19,15 @@ public class HomePage {
 
 	public boolean isAt() {
 		return Browser.title().equals(title);
+	}
+
+	public void clickMusicEducationLink() {
+	    Menu.musicLink.click();
+	}
+
+	public void clickCookieNotice() {
+		Browser.clickCookieNotice();
+		
 	}
 }
 
