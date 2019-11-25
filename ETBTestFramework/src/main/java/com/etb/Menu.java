@@ -1,12 +1,27 @@
 package com.etb;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class Menu {
 	
-	public static WebElement schoolsAndYouthServicesLink = Browser.findElementByLinkText("Schools & Youth Services");
-	public static WebElement musicLink = Browser.findElementByLinkText("Music Education");
-	public static WebElement postPrimarySchoolsLink = Browser.findElementByLinkText("Post-Primary Schools");
+	/**
+	 * Constructor
+	 */
+	public Menu() {
+		PageFactory.initElements(Browser.driver, this);
+	}
 
+	@FindBy(linkText = "Schools & Youth Services")
+	public WebElement schoolsAndYouthServicesLink;
+	
+	@FindBy(linkText = "Music Education")
+	public WebElement musicLink; 
+	
+	@FindBy(linkText = "Post-Primary Schools")
+	public WebElement postPrimarySchoolsLink; 
+	
 }
+

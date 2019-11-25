@@ -2,32 +2,16 @@ package com.etb;
 
 import org.openqa.selenium.By;
 
-public class HomePage {
-	
-	static String url = "https://www.donegaletb.ie/";
-	static String title = "Donegal ETB – "
-			+ "Education and Training Services";
+public class HomePage extends Page{
 
-	public void goTo() {
-		Browser.goTo(url);
-		
-	}
-	
-	public static void print(String message) {
-		System.out.println(message);
-	}
-
-	public boolean isAt() {
-		return Browser.title().equals(title);
-	}
-
-	public void clickMusicEducationLink() {
-	    Menu.musicLink.click();
-	}
-
-	public void clickCookieNotice() {
-		Browser.clickCookieNotice();
-		
+	/**
+	 * @param url
+	 * @param title
+	 */
+	public HomePage() {
+		this.url = "https://www.donegaletb.ie/";
+		this.title = "Donegal ETB – "
+				+ "Education and Training Services";
 	}
 }
 

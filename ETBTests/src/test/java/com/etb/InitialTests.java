@@ -19,10 +19,10 @@ public class InitialTests {
 	@Test
 	//Test home page opens properly
 	//by checking the page title.
-	public void testMusicEducationPage() {
+		public void testMusicEducationLink() {
 		Pages.homePage().goTo();
 		Pages.homePage().clickCookieNotice();
-		Pages.homePage().clickMusicEducationLink();
+		Pages.menuPage().musicLink.click();
 		assertTrue(Pages.musicEducationPage().isAt());
 	}
 	
