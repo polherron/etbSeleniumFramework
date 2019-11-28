@@ -4,16 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 
-public class Menu {
-	
-	/**
-	 * Constructor
-	 */
-	public Menu() {
-		PageFactory.initElements(Browser.driver, this);
-	}
-
+public class Menu extends Page {
 	
 	//Examples of using @FindBy annotation.
 	@FindBy(linkText = "Schools & Youth Services")
@@ -24,6 +17,5 @@ public class Menu {
 	
 	@FindBy(linkText = "Post-Primary Schools")
 	public WebElement postPrimarySchoolsLink; 
-	
 }
 

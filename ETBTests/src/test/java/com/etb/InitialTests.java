@@ -8,7 +8,7 @@ import org.junit.Test;
 
 public class InitialTests {
 
-	@Test
+	/*@Test
 	//Test home page opens properly
 	//by checking the page title.
 	public void testHomePage() {
@@ -24,6 +24,16 @@ public class InitialTests {
 		Pages.homePage().clickCookieNotice();
 		Pages.menuPage().musicLink.click();
 		assertTrue(Pages.musicEducationPage().isAt());
+	}
+	*/
+	@Test
+	//Test home page opens properly
+	//by checking the page title.
+		public void testMusicEducationHeaderText() {
+		Pages.homePage().goTo();
+		Pages.homePage().clickCookieNotice();
+		Pages.menuPage().musicLink.click();
+		assertTrue(Pages.musicEducationPage().getHeader().equals("Donegal Music Education Partnership"));
 	}
 	
 	
