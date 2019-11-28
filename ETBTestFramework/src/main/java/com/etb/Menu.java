@@ -14,6 +14,8 @@ public class Menu {
 		PageFactory.initElements(Browser.driver, this);
 	}
 
+	
+	//Examples of using @FindBy annotation.
 	@FindBy(linkText = "Schools & Youth Services")
 	public WebElement schoolsAndYouthServicesLink;
 	

@@ -22,10 +22,6 @@ public class Browser {
 		driver.close();
 	}
 
-	public static WebElement findElementByLinkText(String string) {
-		// TODO Auto-generated method stub
-		return driver.findElement(By.linkText(string));
-	}
 
 	public static void clickCookieNotice() {
 		WebElement cookieNotice = driver.findElement(By.id("cookie_action_close_header"));
