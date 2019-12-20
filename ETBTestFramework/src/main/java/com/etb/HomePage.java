@@ -1,6 +1,5 @@
 package com.etb;
 
-import org.openqa.selenium.By;
 
 public class HomePage {
 	
@@ -19,10 +18,6 @@ public class HomePage {
 
 	public boolean isAt() {
 		return Browser.title().equals(title);
-	}
-
-	public void clickMusicEducationLink() {
-	    Menu.musicLink.click();
 	}
 
 	public void clickCookieNotice() {

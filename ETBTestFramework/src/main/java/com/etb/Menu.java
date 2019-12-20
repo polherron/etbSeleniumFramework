@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 
 public class Menu {
 	
-	public static WebElement schoolsAndYouthServicesLink = Browser.findElementByLinkText("Schools & Youth Services");
-	public static WebElement musicLink = Browser.findElementByLinkText("Music Education");
-	public static WebElement postPrimarySchoolsLink = Browser.findElementByLinkText("Post-Primary Schools");
+	public WebElement schoolsAndYouthServicesLink = Browser.findElementByLinkText("Schools & Youth Services");
+	public WebElement musicLink = Browser.findElementByLinkText("Music Education");
+	//public WebElement postPrimarySchoolsLink = Browser.findElementByLinkText("Post-Primary Schools");
 
 }
