@@ -1,10 +1,10 @@
 package com.etb;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Test;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.Test;
 
 public class InitialTests {
 
@@ -22,12 +22,11 @@ public class InitialTests {
 	public void testMusicEducationPage() {
 		Pages.homePage().goTo();
 		Pages.homePage().clickCookieNotice();
-		Pages.homePage().clickMusicEducationLink();
+		Pages.menuPage().musicLink.click();
 		assertTrue(Pages.musicEducationPage().isAt());
 	}
 	
-	
-	@AfterClass
+	@AfterAll
 	//Closing the browser
 	public static void cleanUp() {
 		Browser.close();
