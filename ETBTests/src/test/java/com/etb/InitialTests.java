@@ -1,10 +1,9 @@
 package com.etb;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.Test;
 
 public class InitialTests {
 
@@ -37,7 +36,7 @@ public class InitialTests {
 	}
 	
 	
-	@AfterClass
+	@AfterAll
 	//Closing the browser
 	public static void cleanUp() {
 		Browser.close();

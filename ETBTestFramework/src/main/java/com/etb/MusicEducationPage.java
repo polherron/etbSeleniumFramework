@@ -13,7 +13,6 @@ public class MusicEducationPage extends Page {
 	public WebElement musicEducationHeaderText; 
 
 	public String getHeader() {
-		clickCookieNotice();
 		return musicEducationHeaderText.getText();
 	}
 }
