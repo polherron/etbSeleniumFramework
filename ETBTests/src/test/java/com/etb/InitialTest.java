@@ -1,12 +1,10 @@
 package com.etb;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.Test;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Test;
-
-public class InitialTests {
+class InitialTest {
 
 	@Test
 	//Test home page opens properly
@@ -16,12 +14,10 @@ public class InitialTests {
 		assertTrue(Pages.homePage().isAt());
 	}
 	
-	@After
+	@AfterAll
 	//Closing the browser
-	public void cleanUp() {
+	public static void cleanUp() {
 		Browser.close();
 	}
-	
+
 }
-
-
