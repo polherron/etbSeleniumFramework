@@ -19,8 +19,6 @@
 		<scope>test</scope>
 	</dependency>
 	
-	
-	
 	<!-- Dependent upon TestFramework (selenium project) -->
 	<dependency>
     	 <groupId>com.etb</groupId>
@@ -77,11 +75,6 @@
           <outputDirectory>${basedir}/target/newsite</outputDirectory>
         </configuration>
       </plugin>
-       
-       
     </plugins>
-    
-    
   </build>
-  
 </project>
